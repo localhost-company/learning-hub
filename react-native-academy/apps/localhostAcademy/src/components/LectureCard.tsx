@@ -13,7 +13,7 @@ import {
 } from '../theme';
 
 export type LectureItem = {
-  image: ImageSourcePropType;
+  image?: ImageSourcePropType;
   title: string;
   description: string;
   navigateTo: string;
@@ -34,7 +34,7 @@ const LectureCard = ({ image, title, description, navigateTo }: LectureItem) => 
       style={({ pressed }) => [styles.card, pressed && styles.cardPressed]}
     >
       <View style={styles.cardHeader}>
-        <Image source={image} style={styles.image} />
+        {image && <Image source={image} style={styles.image} />}
         <Text style={styles.headerText}>{title}</Text>
       </View>
       <View style={styles.content}>
@@ -68,7 +68,6 @@ const styles = StyleSheet.create({
   },
   headerText: {
     flex: 1,
-    marginLeft: spacing.md,
     fontFamily: fontFamilies.heading,
     fontSize: fontSizes.bodyLarge,
     fontWeight: fontWeights.bold,
@@ -78,6 +77,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     marginBottom: 10,
+    gap: spacing.md
   },
   content: {
     rowGap: spacing.sm,

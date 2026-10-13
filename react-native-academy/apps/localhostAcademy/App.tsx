@@ -14,6 +14,16 @@ import { ListExampleScreen } from './src/screens/lecture3/ListExampleScreen';
 import ScrollViewListScreen from './src/screens/lecture3/ScrollViewListScreen';
 import RNBasicsScreen from './src/screens/RNBasicsScreen';
 import { colors } from './src/theme';
+import Profiler from './src/screens/lecture4/Profiler';
+import ErrorsAndWarningsScreen from './src/screens/lecture4/ErrorsAndWarningsScreen';
+import SourcesDebuggerBreakpointsCodeScreen from './src/screens/lecture4/SourcesDebuggerBreakpointsCodeScreen';
+import NetworkScreen from './src/screens/lecture4/NetworkScreen';
+import PerformanceCPUJsScreen from './src/screens/lecture4/PerformanceCPUJsScreen';
+import PerformanceCPURenderScreen from './src/screens/lecture4/PerformanceCPURenderScreen';
+import MemoryLeakScreen from './src/screens/lecture4/MemoryLeakScreen';
+import ComponentsScreen from './src/screens/lecture4/ComponentsScreen';
+import DebuggingScreen from './src/screens/DebuggingScreen';
+import PracticeDebuggingScreen from './src/screens/lecture4/PracticeDebuggingScreen';
 
 const queryClient = new QueryClient();
 
@@ -67,6 +77,56 @@ const RootStack = () => {
       <Stack.Screen
         name="ImageOptimizationScreen"
         component={ImageOptimizationScreen}
+        options={logoHeaderOptions}
+      />
+      <Stack.Screen
+        name="Debugging"
+        component={DebuggingScreen}
+        options={logoHeaderOptions}
+      />
+      <Stack.Screen
+        name="Profiler"
+        component={Profiler}
+        options={logoHeaderOptions}
+      />
+      <Stack.Screen
+        name="ErrorsAndWarnings"
+        component={ErrorsAndWarningsScreen}
+        options={logoHeaderOptions}
+      />
+      <Stack.Screen
+        name="SourcesDebuggerBreakpointsCode"
+        component={SourcesDebuggerBreakpointsCodeScreen}
+        options={logoHeaderOptions}
+      />
+      <Stack.Screen
+        name="Network"
+        component={NetworkScreen}
+        options={logoHeaderOptions}
+      />
+      <Stack.Screen
+        name="PerformanceCPUJs"
+        component={PerformanceCPUJsScreen}
+        options={logoHeaderOptions}
+      />
+      <Stack.Screen
+        name="PerformanceCPURender"
+        component={PerformanceCPURenderScreen}
+        options={logoHeaderOptions}
+      />
+      <Stack.Screen
+        name="MemoryLeak"
+        component={MemoryLeakScreen}
+        options={logoHeaderOptions}
+      />
+      <Stack.Screen
+        name="Components"
+        component={ComponentsScreen}
+        options={logoHeaderOptions}
+      />
+      <Stack.Screen
+        name="PractiseDebugging"
+        component={PracticeDebuggingScreen}
         options={logoHeaderOptions}
       />
     </Stack.Navigator>

@@ -25,13 +25,13 @@ const lectures: LectureItem[] = [
     description:
       'ScrollView vs FlatList, images, input events, rendering and re-rendering, props drilling and Context for state management.',
   },
-  // {
-  //   image: require('../../assets/RN-icon.webp'),
-  //   title: '4. Debugging',
-  //   navigateTo: 'Debugging',
-  //   description:
-  //     'Working with the debug console, debugging code, tracking re-renders and optimization via keys, useMemo and useCallback.',
-  // },
+  {
+    image: require('../../assets/RN-icon.webp'),
+    title: '4. Debugging',
+    navigateTo: 'Debugging',
+    description:
+      'Working with the debug console, debugging code, tracking re-renders and optimization via keys, useMemo and useCallback.',
+  },
   // {
   //   image: require('../../assets/RN-icon.webp'),
   //   title: '5. Navigation',
