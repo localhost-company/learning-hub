@@ -32,6 +32,7 @@
 **Videá z hodiny:**
 
 - Video 1: [7. hodina](https://localhost365-my.sharepoint.com/:v:/g/personal/stefan_localhost_company/IQCo7LDIifsUSKP6UunBBRGXASur5b-nFNlXFFUgzvSULF8?e=4EVS7V)
+- Video 2: [8. hodina](https://localhost365-my.sharepoint.com/:v:/g/personal/stefan_localhost_company/IQAogDbsfioqQauiLIVg-YZsAWO-HNbb0Pl8e_I_5PA-QWU)
 
 
 **Prezentácia:** [Debugging (PDF)](presentations/4%20-%20Debugging.pdf).
