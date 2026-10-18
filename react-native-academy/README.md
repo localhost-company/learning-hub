@@ -36,3 +36,16 @@
 
 
 **Prezentácia:** [Debugging (PDF)](presentations/4%20-%20Debugging.pdf).
+
+### 5. Navigácia
+
+**Kód pre praktickú časť:**
+
+- [Parts for Machine Starter](./apps/parts-for-machine-starter)
+- [Postup vypracovania](./apps/parts-for-machine-starter/guideline.md)
+
+**Videá z hodiny:**
+
+- Video 1: TBD
+
+**Prezentácia:** TBD.
