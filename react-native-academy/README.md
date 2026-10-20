@@ -46,6 +46,6 @@
 
 **Videá z hodiny:**
 
-- Video 1: TBD
+- Video 1: [9. hodina](https://localhost365-my.sharepoint.com/:v:/g/personal/stefan_localhost_company/IQA9GVd90f_OQJOYz8uLXrCoAcTpxfYsEcbQyKkksSzrT_I)
 
 **Prezentácia:** TBD.
