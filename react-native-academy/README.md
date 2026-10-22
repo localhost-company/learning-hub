@@ -47,5 +47,6 @@
 **Videá z hodiny:**
 
 - Video 1: [9. hodina](https://localhost365-my.sharepoint.com/:v:/g/personal/stefan_localhost_company/IQA9GVd90f_OQJOYz8uLXrCoAcTpxfYsEcbQyKkksSzrT_I)
+- Video 2: [10. hodina](https://localhost365-my.sharepoint.com/:v:/g/personal/stefan_localhost_company/IQAnebP3zSzbTYC_cqZS9-oXAfY5A6Z6yJFtF7wDa0ubxlg?e=fWETOd)
 
 **Prezentácia:** TBD.
