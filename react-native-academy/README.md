@@ -50,4 +50,4 @@
 - Video 2: [10. hodina](https://localhost365-my.sharepoint.com/:v:/g/personal/stefan_localhost_company/IQAnebP3zSzbTYC_cqZS9-oXAfY5A6Z6yJFtF7wDa0ubxlg?e=fWETOd)
 - Video 3: [11. hodina](https://localhost365-my.sharepoint.com/:v:/g/personal/stefan_localhost_company/IQCwzzRe9fT6SpMVRhSQgCGVAfgNfawQKhIB83paJM1cVF4?e=AmokWT)
 
-**Prezentácia:** TBD.
+**Prezentácia:** [Navigácia (PDF)](presentations/5%20-%20Navigacia.pdf).
