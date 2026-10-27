@@ -32,21 +32,13 @@ const lectures: LectureItem[] = [
     description:
       'Working with the debug console, debugging code, tracking re-renders and optimization via keys, useMemo and useCallback.',
   },
-  // {
-  //   image: require('../../assets/RN-icon.webp'),
-  //   title: '5. Navigation',
-  //   navigateTo: 'RNBasics',
-  //   description:
-  //     'Navigation theory, navigation types, setting up React Navigation, practical examples, animations with Reanimated, SafeAreaView and insets.',
-  // },
-  // {
-  //   image: require('../../assets/RN-icon.webp'),
-  //   title: '6. Asynchronous Processes',
-  //   navigateTo: 'RNBasics',
-  //   description:
-  //     'Event loop, micro and macro tasks, Promises, error handling, basics of HTTP requests, MSW integration and implementing API calls.',
-  // },
-  // {
+  {
+    image: require('../../assets/RN-icon.webp'),
+    title: '6. Asynchronous Processes',
+    navigateTo: 'AsyncProcesses',
+    description:
+      'Event loop, task queue and macrotask queue, Promises and HTTP requests with fetch and the public DummyJSON API.',
+  },
   //   image: require('../../assets/RN-icon.webp'),
   //   title: '7. Global State Management',
   //   navigateTo: 'RNBasics',

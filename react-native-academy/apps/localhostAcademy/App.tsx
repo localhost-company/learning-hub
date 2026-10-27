@@ -24,6 +24,24 @@ import MemoryLeakScreen from './src/screens/lecture4/MemoryLeakScreen';
 import ComponentsScreen from './src/screens/lecture4/ComponentsScreen';
 import DebuggingScreen from './src/screens/DebuggingScreen';
 import PracticeDebuggingScreen from './src/screens/lecture4/PracticeDebuggingScreen';
+import AsyncProcessesScreen from './src/screens/AsyncProcessesScreen';
+import CallStackScreen from './src/screens/lecture6/CallStackScreen';
+import BlockingOrdersScreen from './src/screens/lecture6/BlockingOrdersScreen';
+import TaskQueueScreen from './src/screens/lecture6/TaskQueueScreen';
+import TimerOrdersScreen from './src/screens/lecture6/TimerOrdersScreen';
+import BlockedTimerScreen from './src/screens/lecture6/BlockedTimerScreen';
+import OrderQueuesScreen from './src/screens/lecture6/OrderQueuesScreen';
+import PromiseExecutorScreen from './src/screens/lecture6/PromiseExecutorScreen';
+import PromiseChainingScreen from './src/screens/lecture6/PromiseChainingScreen';
+import PromiseRejectionScreen from './src/screens/lecture6/PromiseRejectionScreen';
+import AsyncAwaitScreen from './src/screens/lecture6/AsyncAwaitScreen';
+import SequentialScreen from './src/screens/lecture6/SequentialScreen';
+import PromiseAllScreen from './src/screens/lecture6/PromiseAllScreen';
+import PromiseAllErrorScreen from './src/screens/lecture6/PromiseAllErrorScreen';
+import HttpGetScreen from './src/screens/lecture6/HttpGetScreen';
+import HttpSlowScreen from './src/screens/lecture6/HttpSlowScreen';
+import HttpErrorScreen from './src/screens/lecture6/HttpErrorScreen';
+import NetworkErrorScreen from './src/screens/lecture6/NetworkErrorScreen';
 
 const queryClient = new QueryClient();
 
@@ -79,16 +97,8 @@ const RootStack = () => {
         component={ImageOptimizationScreen}
         options={logoHeaderOptions}
       />
-      <Stack.Screen
-        name="Debugging"
-        component={DebuggingScreen}
-        options={logoHeaderOptions}
-      />
-      <Stack.Screen
-        name="Profiler"
-        component={Profiler}
-        options={logoHeaderOptions}
-      />
+      <Stack.Screen name="Debugging" component={DebuggingScreen} options={logoHeaderOptions} />
+      <Stack.Screen name="Profiler" component={Profiler} options={logoHeaderOptions} />
       <Stack.Screen
         name="ErrorsAndWarnings"
         component={ErrorsAndWarningsScreen}
@@ -99,11 +109,7 @@ const RootStack = () => {
         component={SourcesDebuggerBreakpointsCodeScreen}
         options={logoHeaderOptions}
       />
-      <Stack.Screen
-        name="Network"
-        component={NetworkScreen}
-        options={logoHeaderOptions}
-      />
+      <Stack.Screen name="Network" component={NetworkScreen} options={logoHeaderOptions} />
       <Stack.Screen
         name="PerformanceCPUJs"
         component={PerformanceCPUJsScreen}
@@ -114,21 +120,37 @@ const RootStack = () => {
         component={PerformanceCPURenderScreen}
         options={logoHeaderOptions}
       />
-      <Stack.Screen
-        name="MemoryLeak"
-        component={MemoryLeakScreen}
-        options={logoHeaderOptions}
-      />
-      <Stack.Screen
-        name="Components"
-        component={ComponentsScreen}
-        options={logoHeaderOptions}
-      />
+      <Stack.Screen name="MemoryLeak" component={MemoryLeakScreen} options={logoHeaderOptions} />
+      <Stack.Screen name="Components" component={ComponentsScreen} options={logoHeaderOptions} />
       <Stack.Screen
         name="PractiseDebugging"
         component={PracticeDebuggingScreen}
         options={logoHeaderOptions}
       />
+      <Stack.Screen
+        name="AsyncProcesses"
+        component={AsyncProcessesScreen}
+        options={logoHeaderOptions}
+      />
+      <Stack.Group screenOptions={logoHeaderOptions}>
+        <Stack.Screen name="AsyncCallStack" component={CallStackScreen} />
+        <Stack.Screen name="AsyncBlockingOrders" component={BlockingOrdersScreen} />
+        <Stack.Screen name="AsyncTaskQueue" component={TaskQueueScreen} />
+        <Stack.Screen name="AsyncTimerOrders" component={TimerOrdersScreen} />
+        <Stack.Screen name="AsyncBlockedTimer" component={BlockedTimerScreen} />
+        <Stack.Screen name="AsyncOrderQueues" component={OrderQueuesScreen} />
+        <Stack.Screen name="AsyncPromiseExecutor" component={PromiseExecutorScreen} />
+        <Stack.Screen name="AsyncPromiseChaining" component={PromiseChainingScreen} />
+        <Stack.Screen name="AsyncPromiseRejection" component={PromiseRejectionScreen} />
+        <Stack.Screen name="AsyncAwait" component={AsyncAwaitScreen} />
+        <Stack.Screen name="AsyncSequential" component={SequentialScreen} />
+        <Stack.Screen name="AsyncPromiseAll" component={PromiseAllScreen} />
+        <Stack.Screen name="AsyncPromiseAllError" component={PromiseAllErrorScreen} />
+        <Stack.Screen name="AsyncHttpGet" component={HttpGetScreen} />
+        <Stack.Screen name="AsyncHttpSlow" component={HttpSlowScreen} />
+        <Stack.Screen name="AsyncHttpError" component={HttpErrorScreen} />
+        <Stack.Screen name="AsyncNetworkError" component={NetworkErrorScreen} />
+      </Stack.Group>
     </Stack.Navigator>
   );
 };
