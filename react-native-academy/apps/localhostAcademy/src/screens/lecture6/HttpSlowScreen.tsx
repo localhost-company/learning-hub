@@ -46,7 +46,7 @@ export default function HttpSlowScreen() {
       }
     }
 
-    void loadProducts();
+    loadProducts();
     return () => {
       ignore = true;
       controller.abort();

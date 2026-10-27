@@ -1,127 +1,147 @@
 import React from 'react';
-import { ScrollView, StyleSheet } from 'react-native';
+import { ScrollView, StyleSheet, Text, View } from 'react-native';
 import LectureCard, { LectureItem } from '../components/LectureCard';
-import { spacing } from '../theme';
+import { colors, fontFamilies, fontSizes, fontWeights, spacing } from '../theme';
 
 const examples: LectureItem[] = [
   {
-    title: 'Vnorené volania',
+    title: 'Nested calls',
     navigateTo: 'AsyncCallStack',
-    description: 'Volanie funkcie z inej funkcie.',
-    image: require('../../assets/RN-icon.webp'),
+    description: 'Calling a function from another function.',
   },
   {
-    title: 'Číslované objednávky',
+    title: 'Numbered orders',
     navigateTo: 'AsyncBlockingOrders',
-    description: 'Druhé kliknutie počas prípravy prvej objednávky.',
-    image: require('../../assets/RN-icon.webp'),
+    description: 'A second click while the first order is being prepared.',
   },
   {
-    title: 'Odovzdanie cez setTimeout',
+    title: 'Deferring with setTimeout',
     navigateTo: 'AsyncTaskQueue',
-    description: 'Príprava objednávky s náhodným oneskorením.',
-    image: require('../../assets/RN-icon.webp'),
+    description: 'Preparing an order with a random delay.',
   },
   {
-    title: 'Objednávky cez setTimeout',
+    title: 'Orders with setTimeout',
     navigateTo: 'AsyncTimerOrders',
-    description: 'Viac objednávok s čakaním od 1 do 3 sekúnd.',
-    image: require('../../assets/RN-icon.webp'),
+    description: 'Multiple orders with delays of 1 to 3 seconds.',
   },
   {
-    title: 'Timer a plný call stack',
+    title: 'Timer and a busy call stack',
     navigateTo: 'AsyncBlockedTimer',
-    description: 'Timer na 500 ms počas 2-sekundového synchrónneho výpočtu.',
-    image: require('../../assets/RN-icon.webp'),
+    description: 'A 500 ms timer during a 2-second synchronous computation.',
   },
   {
-    title: 'Executor a handler',
+    title: 'Executor and handler',
     navigateTo: 'AsyncPromiseExecutor',
-    description: 'Vytvorenie Promise a pripojenie handlera.',
-    image: require('../../assets/RN-icon.webp'),
+    description: 'Creating a Promise and attaching a handler.',
   },
   {
-    title: 'Reťazenie hodnôt',
+    title: 'Chaining values',
     navigateTo: 'AsyncPromiseChaining',
-    description: 'Odovzdávanie hodnôt medzi .then handlermi.',
-    image: require('../../assets/RN-icon.webp'),
+    description: 'Passing values between .then handlers.',
   },
   {
-    title: 'Reject, catch a finally',
+    title: 'Reject, catch, and finally',
     navigateTo: 'AsyncPromiseRejection',
-    description: 'Odmietnutie Promise a spracovanie chyby.',
-    image: require('../../assets/RN-icon.webp'),
+    description: 'Rejecting a Promise and handling the error.',
   },
   {
-    title: 'Objednávky – task a microtask',
+    title: 'Orders – tasks and microtasks',
     navigateTo: 'AsyncOrderQueues',
-    description: 'Timery, Promise handlery a vnorené microtasks.',
-    image: require('../../assets/RN-icon.webp'),
+    description: 'Timers, Promise handlers, and nested microtasks.',
   },
   {
-    title: 'Objednávka cez async/await',
+    title: 'An order with async/await',
     navigateTo: 'AsyncAwait',
-    description: 'Čakanie na prípravu objednávky cez await.',
-    image: require('../../assets/RN-icon.webp'),
+    description: 'Waiting for an order to be prepared using await.',
   },
   {
-    title: 'Sekvenčné vykonávanie',
+    title: 'Sequential execution',
     navigateTo: 'AsyncSequential',
-    description: 'Objednávky pripravované postupne.',
-    image: require('../../assets/RN-icon.webp'),
+    description: 'Orders prepared sequentially.',
   },
   {
-    title: 'Súbežne cez Promise.all',
+    title: 'Concurrent execution with Promise.all',
     navigateTo: 'AsyncPromiseAll',
-    description: 'Objednávky pripravované súbežne.',
-    image: require('../../assets/RN-icon.webp'),
+    description: 'Orders prepared concurrently.',
   },
   {
-    title: 'Promise.all pri chybe',
+    title: 'Promise.all on error',
     navigateTo: 'AsyncPromiseAllError',
-    description: 'Zlyhanie jednej zo súbežných objednávok.',
-    image: require('../../assets/RN-icon.webp'),
+    description: 'Failure of one of the concurrent orders.',
   },
   {
-    title: 'GET: úspech',
+    title: 'GET: success',
     navigateTo: 'AsyncHttpGet',
-    description: 'Načítanie produktov z DummyJSON.',
-    image: require('../../assets/RN-icon.webp'),
+    description: 'Fetching products from DummyJSON.',
   },
   {
-    title: 'GET: pomalá odpoveď',
+    title: 'GET: slow response',
     navigateTo: 'AsyncHttpSlow',
-    description: 'Načítanie v useEffect a cleanup requestu.',
-    image: require('../../assets/RN-icon.webp'),
+    description: 'Fetching data in useEffect and cleaning up the request.',
   },
   {
     title: 'GET: HTTP 500',
     navigateTo: 'AsyncHttpError',
-    description: 'Spracovanie HTTP 500 cez response.ok.',
-    image: require('../../assets/RN-icon.webp'),
+    description: 'Handling HTTP 500 using response.ok.',
   },
   {
-    title: 'GET: sieťová chyba',
+    title: 'GET: network error',
     navigateTo: 'AsyncNetworkError',
-    description: 'Request na nedostupnú doménu.',
-    image: require('../../assets/RN-icon.webp'),
+    description: 'A request to an unreachable domain.',
   },
 ];
 
 export default function AsyncProcessesScreen() {
   return (
-    <ScrollView contentContainerStyle={styles.container}>
-      {examples.map(example => (
-        <LectureCard key={example.navigateTo} {...example} />
-      ))}
-    </ScrollView>
+    <View style={styles.overlay}>
+      <View style={styles.hero}>
+        <Text style={styles.badge}>Lecture 6</Text>
+        <Text style={styles.title}>Asynchronous Processes</Text>
+      </View>
+      <ScrollView style={styles.scrollView} contentContainerStyle={styles.scrollViewContent}>
+        {examples.map(example => (
+          <LectureCard key={example.title} {...example} />
+        ))}
+      </ScrollView>
+    </View>
   );
 }
 
 const styles = StyleSheet.create({
-  container: {
-    padding: spacing.lg,
+  overlay: {
+    flex: 1,
+    backgroundColor: colors.surface.canvas,
+    paddingHorizontal: spacing.lg,
+    paddingTop: spacing.md,
+  },
+  scrollView: {
+    flex: 1,
+    width: '100%',
+  },
+  scrollViewContent: {
+    rowGap: spacing.lg,
     paddingBottom: spacing.xl,
-    gap: spacing.lg,
+  },
+  hero: {
+    rowGap: 6,
+    marginBottom: spacing.lg,
+  },
+  badge: {
+    alignSelf: 'flex-start',
+    fontFamily: fontFamilies.accent,
+    fontSize: fontSizes.caption,
+    color: colors.badge.color,
+    fontWeight: '700',
+    backgroundColor: colors.badge.backgroundColor,
+    paddingHorizontal: 8,
+    paddingVertical: 4,
+    borderRadius: 999,
+    overflow: 'hidden',
+  },
+  title: {
+    fontFamily: fontFamilies.heading,
+    fontSize: fontSizes.display,
+    fontWeight: fontWeights.black,
+    color: colors.brand.r4,
   },
 });
