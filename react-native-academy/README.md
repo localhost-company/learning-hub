@@ -51,3 +51,12 @@
 - Video 3: [11. hodina](https://localhost365-my.sharepoint.com/:v:/g/personal/stefan_localhost_company/IQCwzzRe9fT6SpMVRhSQgCGVAfgNfawQKhIB83paJM1cVF4?e=AmokWT)
 
 **Prezentácia:** [Navigácia (PDF)](presentations/5%20-%20Navigacia.pdf).
+
+### 5. Asynchrónne procesy
+
+**Videá z hodiny:**
+
+- Video 1: [12. hodina](https://localhost365-my.sharepoint.com/:v:/g/personal/stefan_localhost_company/IQASmPkJpa_KRbgx_3cpjPy3AS_K7i5fCrm1jFrlBOdiUJY?e=Sf72o2)
+
+**Prezentácia:** [Asynchrónne procesy (PDF)](presentations/7%20-%20Asynchrónne%20processy.pdf).
+
