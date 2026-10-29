@@ -58,5 +58,5 @@
 
 - Video 1: [12. hodina](https://localhost365-my.sharepoint.com/:v:/g/personal/stefan_localhost_company/IQASmPkJpa_KRbgx_3cpjPy3AS_K7i5fCrm1jFrlBOdiUJY?e=Sf72o2)
 
-**Prezentácia:** [Asynchrónne procesy (PDF)](presentations/7%20-%20Asynchrónne%20processy.pdf).
+**Prezentácia:** [Asynchrónne procesy (PDF)](presentations/7%20-%20Asynchr%C3%B3nne%20processy.pdf).
 
