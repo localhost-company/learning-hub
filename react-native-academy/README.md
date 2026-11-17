@@ -83,3 +83,11 @@
 - Video 1: [14. hodina](https://localhost365-my.sharepoint.com/:v:/g/personal/stefan_localhost_company/IQB5iUFiLBLHRJE_b7IfQmTRAUAcNudROXJCCJUNiTG9LEM?e=PzLawU)
 
 **Prezentácia:** TBD.
+
+### 9. Využitie natívnych funkcionalít
+
+**Videá z hodiny:**
+
+- Video 1: [15. hodina](https://localhost365-my.sharepoint.com/:v:/g/personal/stefan_localhost_company/IQC8T1QE1GPoRpTXLoQ3H4FSATle_QO12i0kRBs4gXnKeNs?e=UT3MhU)
+
+**Prezentácia:** TBD.
