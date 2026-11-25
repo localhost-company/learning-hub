@@ -91,3 +91,10 @@
 - Video 1: [15. hodina](https://localhost365-my.sharepoint.com/:v:/g/personal/stefan_localhost_company/IQC8T1QE1GPoRpTXLoQ3H4FSATle_QO12i0kRBs4gXnKeNs?e=UT3MhU)
 
 **Prezentácia:** TBD.
+
+### 10. Testovanie v RN pomocou JEST
+
+- Video 1: TBD.
+- Video 2: TBD.
+
+**Prezentácia:** [Testovanie (PDF)](presentations/10%20-%20Testovanie.pdf).
