@@ -94,7 +94,7 @@
 
 ### 10. Testovanie v RN pomocou JEST
 
-- Video 1: TBD.
-- Video 2: TBD.
+- Video 1: [16. hodina](https://localhost365-my.sharepoint.com/:v:/g/personal/stefan_localhost_company/IQB4LZ8IioeeQa4ZI9WHB716AaonXBQ9S5kBsMv1WMCTSB4?e=2vfnmt)
+- Video 2: [17. hodina](https://localhost365-my.sharepoint.com/:v:/g/personal/stefan_localhost_company/IQCLR7mOxbeqTLhXqQ7FthLmAXaHAVeziY-M2cmAz-SG42o?e=Icl9EO)
 
 **Prezentácia:** [Testovanie (PDF)](presentations/10%20-%20Testovanie.pdf).
