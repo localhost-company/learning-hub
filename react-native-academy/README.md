@@ -98,3 +98,10 @@
 - Video 2: [17. hodina](https://localhost365-my.sharepoint.com/:v:/g/personal/stefan_localhost_company/IQCLR7mOxbeqTLhXqQ7FthLmAXaHAVeziY-M2cmAz-SG42o?e=Icl9EO)
 
 **Prezentácia:** [Testovanie (PDF)](presentations/10%20-%20Testovanie.pdf).
+
+### 11. Advanced UI a Storybook
+
+- Video 1: [18. hodina](https://localhost365-my.sharepoint.com/:v:/g/personal/stefan_localhost_company/IQAoesBKXAM8SYFhicDZZ8CwAXn8RX54vIyKCZF2_wzkJQM?e=sIZSw1)
+- Video 2: TBD
+
+**Prezentácia:** TBD
